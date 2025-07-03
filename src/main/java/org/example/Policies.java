@@ -6,9 +6,9 @@ public class Policies {
         LRU, FIFO, RANDOM
     }
     private final PolicyType policyType;
-    private final Map<Integer, Queue<Integer>> fifoQueues;
-    private final Map<Integer, LinkedHashMap<Integer, Integer>> lruMaps;
-    private final Random random;
+    public final Map<Integer, Queue<Integer>> fifoQueues;
+    public final Map<Integer, LinkedHashMap<Integer, Integer>> lruMaps;
+    public final Random random;
 
     //Constructor method to set policy type and initialize internal structures
     public Policies(PolicyType policyType){
